@@ -13,10 +13,12 @@ public class RunController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        MovesPlayer();
+    }
+    private void MovesPlayer()
+    {
         rigidbody.velocity = new Vector3(joystick.Horizontal * movespeed, rigidbody.velocity.y, joystick.Vertical * movespeed);
-        if(joystick.Horizontal != 0 || joystick.Vertical !=0)
-        {
-            transform.rotation = Quaternion.LookRotation(rigidbody.velocity);
-        }
+        if (joystick.Horizontal != 0 || joystick.Vertical != 0)
+         transform.rotation = Quaternion.LookRotation(rigidbody.velocity);
     }
 }
