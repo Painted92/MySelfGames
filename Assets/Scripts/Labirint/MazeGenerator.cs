@@ -2,13 +2,10 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
-
 public class MazeGenerator
 {
-    public int Width = 20;
-    public int Height = 20;
+    public int Width = 5;
+    public int Height = 5;
 
     public Maze GenerateMaze()
     {

@@ -1,7 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 
 public class HintRenderer : MonoBehaviour
 {
@@ -58,4 +56,3 @@ public class HintRenderer : MonoBehaviour
         componentLineRenderer.SetPositions(positions.ToArray());
     }
 }
-
