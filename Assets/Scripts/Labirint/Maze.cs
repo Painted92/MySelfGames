@@ -16,4 +16,9 @@ public class MazeGeneratorCell
 
     public bool Visited = false;
     public int DistanceFromStart;
+    public void ReloadMaze()
+    {
+        X++;
+        Y++;
+    }
 }

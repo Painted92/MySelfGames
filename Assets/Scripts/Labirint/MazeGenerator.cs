@@ -9,13 +9,15 @@ public class MazeGenerator
 
     public Maze GenerateMaze()
     {
+       
         MazeGeneratorCell[,] cells = new MazeGeneratorCell[Width, Height];
-
+        
         for (int x = 0; x < cells.GetLength(0); x++)
         {
             for (int y = 0; y < cells.GetLength(1); y++)
             {
                 cells[x, y] = new MazeGeneratorCell { X = x, Y = y };
+              
             }
         }
 
@@ -28,7 +30,7 @@ public class MazeGenerator
         {
             cells[Width - 1, y].WallBottom = false;
         }
-
+        
         RemoveWallsWithBacktracker(cells);
 
         Maze maze = new Maze();

@@ -5,7 +5,7 @@ public class MazeSpawner : MonoBehaviour
     public Cell CellPrefab;
     public Vector3 CellSize = new Vector3(1, 1, 0);
     public HintRenderer HintRenderer;
-
+   
     public Maze maze;
 
     private void Start()
